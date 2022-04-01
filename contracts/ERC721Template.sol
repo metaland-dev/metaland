@@ -6,8 +6,10 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 contract ERC721Template is AccessControl, Pausable, ERC721 {
+    using SafeERC20 for IERC20;
 
     /// @dev Base token URI used as a prefix by tokenURI().
     string private _baseTokenURI;
@@ -156,6 +158,7 @@ contract ERC721Template is AccessControl, Pausable, ERC721 {
 
     function remint(address to, uint256 tokenId) public onlyRole(MINTER_ROLE) {
         require(tokenId < tokenIds, "Remint: tokenId must less than tokenIds");
+        _burn(tokenId);
         _mint(to, tokenId);
     }
 
@@ -206,7 +209,7 @@ contract ERC721Template is AccessControl, Pausable, ERC721 {
     function withdrawERC20(address tokenAddress, address to) public onlyRole(DEFAULT_ADMIN_ROLE) {
         IERC20 token = IERC20(tokenAddress);
         uint256 balance = token.balanceOf(address(this));
-        token.transfer(to, balance);
+        token.safeTransfer(to, balance);
     }
 
     function withdrawERC721(address tokenAddress, address to, uint256 tokenId) public onlyRole(DEFAULT_ADMIN_ROLE) {

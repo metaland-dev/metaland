@@ -11,3 +11,51 @@ Here are the Game Features of Piakster:
 4. More ways of gameplay
 
 
+
+### The project include customed ERC20 and ERC721 Template.
+
+.
+├── README.md
+├── contracts
+│   ├── ERC20Template.sol
+│   └── ERC721Template.sol
+├── hardhat.config.js
+├── package-lock.json
+├── package.json
+└── scripts
+    ├── deploy.js
+    └── helpers.js
+
+### Prerequisite
+
+#### Node.js 
+
+Hardhat recommend using the current LTS Node.js version. You can learn about it [here](https://nodejs.org/en/about/releases/) 
+
+recommend v16.x, you can download [here](https://nodejs.org/download/release/latest-v16.x/)
+
+#### .env file
+
+Prepare `.env` file under project root directory.
+
+```.env
+ALCHEMY_KEY = "YOUR_ALCHEMY_KEY"
+ACCOUNT_PRIVATE_KEY = "YOUR_PRIVATE_KEY"
+NETWORK="rinkeby"
+```
+
+### Compile
+```SHELL
+npm ci
+```
+
+```SHELL
+npx hardhat compile
+```
+
+### Deploy
+
+```
+npx hardhat deployERC20
+npx hardhat deployERC721
+```

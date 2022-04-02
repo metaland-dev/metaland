@@ -1,4 +1,4 @@
-Pikaster is a card battle game featuring Pikaster (NFT) with the goal to create a “Truly-play& Truly-Earn” Game through innovative product features to bring players both extraordinary gaming experience and handsome economic returns. Pikaster is strategically invested by KuCoin and will launch IGO on it as the first project on April 11 and IDO on MojitoSwap on April 25.
+**Pikaster** is a card battle game featuring Pikaster (NFT) with the goal to create a “Truly-play& Truly-Earn” Game through innovative product features to bring players both extraordinary gaming experience and handsome economic returns. Pikaster is strategically invested by KuCoin and will launch IGO on it as the first project on April 11 and IDO on MojitoSwap on April 25.
 
 Here are the Game Features of Piakster:
 
@@ -10,10 +10,10 @@ Here are the Game Features of Piakster:
 
 4. More ways of gameplay
 
-
+---
 
 ### The project include customed ERC20 and ERC721 Template.
-
+```
 .
 ├── README.md
 ├── contracts
@@ -25,6 +25,7 @@ Here are the Game Features of Piakster:
 └── scripts
     ├── deploy.js
     └── helpers.js
+```
 
 ### Prerequisite
 

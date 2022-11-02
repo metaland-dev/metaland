@@ -1,14 +1,12 @@
-**Pikaster** is a card battle game featuring Pikaster (NFT) with the goal to create a “Truly-play& Truly-Earn” Game through innovative product features to bring players both extraordinary gaming experience and handsome economic returns. Pikaster is strategically invested by KuCoin and will launch IGO on it as the first project on April 11 and IDO on MojitoSwap on April 25.
+WinGoal is the first Web3.0 Decentralized App bringing FIFA World Cup from Web2.0 to Web3.0.
 
-Here are the Game Features of Piakster:
+WinGoal = World Cup Soccer Gaming & Real-Time Predictions + Reality Sports + Live Match Streaming.
 
-1. In-game wallet and marketplace in the App
+WinGoal is Free-To-Play with no barriers to entry. Players will earn soccer-themed tokens as rewards.
 
-2. Creative Three-Token Economic Model 
+Participate in Burn-To-Earn, via Sports , and in Win-To-Earn-More, via Competitive Gaming and World Cup Predictions in real-time!
 
-3. Profit-Sharing System 
-
-4. More ways of gameplay
+WinGoal is built on Polygon and powered by the Unity Engine and Opta.
 
 ---
 
